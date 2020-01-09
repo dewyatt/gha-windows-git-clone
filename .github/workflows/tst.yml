@@ -1,0 +1,15 @@
+name: tst
+
+on: [push]
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - shell: powershell
+        run: |
+          set-strictmode -version 3.0
+          set-psdebug -trace 2
+          . .\tst.ps1
+
