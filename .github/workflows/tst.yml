@@ -12,6 +12,6 @@ jobs:
           set-strictmode -version 3.0
           set-psdebug -trace 2
           . .\tst.ps1
-        env:
-          GIT_REDIRECT_STDERR: '2>&1'
+        #env:
+        #  GIT_REDIRECT_STDERR: '2>&1'
 
